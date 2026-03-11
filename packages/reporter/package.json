@@ -2,7 +2,7 @@
   "name": "@idoa/reporter",
   "version": "0.1.0",
   "description": "Structured and terminal reporting for chain-dev-doctor pipelines.",
-  "license": "SEE LICENSE IN ../../LICENSE",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Mateja3m/chain-dev-doctor-core.git",

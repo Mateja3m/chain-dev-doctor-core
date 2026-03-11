@@ -2,7 +2,7 @@
   "name": "@idoa/utils",
   "version": "0.1.0",
   "description": "Utility helpers for retry, timeout, and defensive runtime handling.",
-  "license": "SEE LICENSE IN ../../LICENSE",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Mateja3m/chain-dev-doctor-core.git",

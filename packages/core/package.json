@@ -2,7 +2,7 @@
   "name": "@idoa/core",
   "version": "0.1.0",
   "description": "Core diagnostics engine for chain-dev-doctor projects.",
-  "license": "SEE LICENSE IN ../../LICENSE",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Mateja3m/chain-dev-doctor-core.git",

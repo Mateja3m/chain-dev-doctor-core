@@ -6,7 +6,9 @@ This project is in active development. Security updates are applied to the lates
 
 ## Reporting a Vulnerability
 
-Please report suspected vulnerabilities privately by opening a security advisory or contacting the maintainers directly.
+Please report suspected vulnerabilities to milanmatejicdev@gmail.com
+
+Do not report security vulnerabilities in public GitHub issues.
 
 Include:
 - impact summary

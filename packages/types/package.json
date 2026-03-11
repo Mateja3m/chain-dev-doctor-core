@@ -2,7 +2,7 @@
   "name": "@idoa/types",
   "version": "0.1.0",
   "description": "Shared contracts and standardized types for chain-dev-doctor.",
-  "license": "SEE LICENSE IN ../../LICENSE",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Mateja3m/chain-dev-doctor-core.git",

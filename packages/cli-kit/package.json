@@ -2,7 +2,7 @@
   "name": "@idoa/cli-kit",
   "version": "0.1.0",
   "description": "Minimal CLI integration helpers for chain-dev-doctor tooling.",
-  "license": "SEE LICENSE IN ../../LICENSE",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Mateja3m/chain-dev-doctor-core.git",
