@@ -1,5 +1,5 @@
 {
-  "name": "@idoa/types",
+  "name": "@idoa/dev-doctor-types",
   "version": "0.1.0",
   "description": "Shared contracts and standardized types for chain-dev-doctor.",
   "license": "MIT",

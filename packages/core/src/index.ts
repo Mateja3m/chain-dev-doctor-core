@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-import { retryWithBackoff, toError, withTimeout } from '@idoa/utils';
+import { retryWithBackoff, toError, withTimeout } from '@idoa/dev-doctor-utils';
 import type {
   CheckResult,
   DiagnosticCheck,
@@ -9,7 +9,7 @@ import type {
   PipelineReport,
   PipelineSummary,
   Severity
-} from '@idoa/types';
+} from '@idoa/dev-doctor-types';
 
 const pipelineConfigSchema = z.object({
   timeoutMs: z.number().int().positive().default(5000),

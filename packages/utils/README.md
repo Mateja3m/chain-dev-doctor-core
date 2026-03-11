@@ -1,9 +1,9 @@
-# @idoa/utils
+# @idoa/dev-doctor-utils
 
 Chain-agnostic helpers for retry/backoff, timeout boundaries, and small utility guards.
 
 ## Usage
 
 ```ts
-import { retryWithBackoff, withTimeout } from '@idoa/utils';
+import { retryWithBackoff, withTimeout } from '@idoa/dev-doctor-utils';
 ```

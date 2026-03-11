@@ -1,5 +1,5 @@
 {
-  "name": "@idoa/cli-kit",
+  "name": "@idoa/dev-doctor-cli-kit",
   "version": "0.1.0",
   "description": "Minimal CLI integration helpers for chain-dev-doctor tooling.",
   "license": "MIT",
@@ -34,9 +34,9 @@
   },
   "files": ["dist"],
   "dependencies": {
-    "@idoa/core": "0.1.0",
-    "@idoa/reporter": "0.1.0",
-    "@idoa/types": "0.1.0"
+    "@idoa/dev-doctor-core": "0.1.0",
+    "@idoa/dev-doctor-reporter": "0.1.0",
+    "@idoa/dev-doctor-types": "0.1.0"
   },
   "scripts": {
     "build": "tsup src/index.ts --format esm --clean && tsc -p tsconfig.build.json",

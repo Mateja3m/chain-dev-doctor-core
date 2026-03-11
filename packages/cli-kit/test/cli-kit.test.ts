@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import type { ChainAdapter } from '@idoa/types';
+import type { ChainAdapter } from '@idoa/dev-doctor-types';
 
 import { runAdapterCli } from '../src/index.js';
 

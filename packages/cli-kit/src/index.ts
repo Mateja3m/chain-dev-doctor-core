@@ -1,6 +1,6 @@
-import { runDiagnosticPipeline } from '@idoa/core';
-import { createJsonReport, createTerminalReport } from '@idoa/reporter';
-import type { ChainAdapter, PipelineReport } from '@idoa/types';
+import { runDiagnosticPipeline } from '@idoa/dev-doctor-core';
+import { createJsonReport, createTerminalReport } from '@idoa/dev-doctor-reporter';
+import type { ChainAdapter, PipelineReport } from '@idoa/dev-doctor-types';
 
 export interface RunAdapterCliOptions {
   format?: 'json' | 'terminal';

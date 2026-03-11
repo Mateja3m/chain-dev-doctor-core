@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import type { DiagnosticCheck } from '@idoa/types';
+import type { DiagnosticCheck } from '@idoa/dev-doctor-types';
 
 import { aggregateResults, runDiagnosticPipeline } from '../src/index.js';
 

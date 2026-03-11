@@ -27,7 +27,7 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "npm run --workspace @idoa/types build && npm run --workspace @idoa/utils build && npm run --workspace @idoa/core build && npm run --workspace @idoa/reporter build && npm run --workspace @idoa/cli-kit build",
+    "build": "npm run --workspace @idoa/dev-doctor-types build && npm run --workspace @idoa/dev-doctor-utils build && npm run --workspace @idoa/dev-doctor-core build && npm run --workspace @idoa/dev-doctor-reporter build && npm run --workspace @idoa/dev-doctor-cli-kit build",
     "clean": "npm run --workspaces clean",
     "lint": "npm run --workspaces lint",
     "test": "npm run --workspaces test",

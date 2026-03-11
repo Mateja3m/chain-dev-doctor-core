@@ -1,5 +1,5 @@
 {
-  "name": "@idoa/utils",
+  "name": "@idoa/dev-doctor-utils",
   "version": "0.1.0",
   "description": "Utility helpers for retry, timeout, and defensive runtime handling.",
   "license": "MIT",

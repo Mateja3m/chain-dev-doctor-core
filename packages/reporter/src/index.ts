@@ -1,4 +1,4 @@
-import type { PipelineReport } from '@idoa/types';
+import type { PipelineReport } from '@idoa/dev-doctor-types';
 
 export function createJsonReport(report: PipelineReport): string {
   return JSON.stringify(report, null, 2);

@@ -19,11 +19,11 @@
     "isolatedModules": true,
     "baseUrl": ".",
     "paths": {
-      "@idoa/types": ["packages/types/src/index.ts"],
-      "@idoa/utils": ["packages/utils/src/index.ts"],
-      "@idoa/core": ["packages/core/src/index.ts"],
-      "@idoa/reporter": ["packages/reporter/src/index.ts"],
-      "@idoa/cli-kit": ["packages/cli-kit/src/index.ts"]
+      "@idoa/dev-doctor-types": ["packages/types/src/index.ts"],
+      "@idoa/dev-doctor-utils": ["packages/utils/src/index.ts"],
+      "@idoa/dev-doctor-core": ["packages/core/src/index.ts"],
+      "@idoa/dev-doctor-reporter": ["packages/reporter/src/index.ts"],
+      "@idoa/dev-doctor-cli-kit": ["packages/cli-kit/src/index.ts"]
     },
     "types": ["node", "vitest/globals"]
   }

@@ -1,4 +1,4 @@
-# @idoa/types
+# @idoa/dev-doctor-types
 
 Shared TypeScript contracts for checks, results, pipeline reports, and adapter integration.
 
@@ -11,5 +11,5 @@ Shared TypeScript contracts for checks, results, pipeline reports, and adapter i
 ## Usage
 
 ```ts
-import type { DiagnosticCheck, Severity } from '@idoa/types';
+import type { DiagnosticCheck, Severity } from '@idoa/dev-doctor-types';
 ```

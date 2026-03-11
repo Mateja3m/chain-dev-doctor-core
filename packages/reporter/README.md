@@ -1,4 +1,4 @@
-# @idoa/reporter
+# @idoa/dev-doctor-reporter
 
 Reporting utilities for diagnostic pipeline output.
 
@@ -10,5 +10,5 @@ Reporting utilities for diagnostic pipeline output.
 ## Usage
 
 ```ts
-import { createJsonReport, createTerminalReport } from '@idoa/reporter';
+import { createJsonReport, createTerminalReport } from '@idoa/dev-doctor-reporter';
 ```

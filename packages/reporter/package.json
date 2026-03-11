@@ -1,5 +1,5 @@
 {
-  "name": "@idoa/reporter",
+  "name": "@idoa/dev-doctor-reporter",
   "version": "0.1.0",
   "description": "Structured and terminal reporting for chain-dev-doctor pipelines.",
   "license": "MIT",
@@ -35,7 +35,7 @@
   },
   "files": ["dist"],
   "dependencies": {
-    "@idoa/types": "0.1.0"
+    "@idoa/dev-doctor-types": "0.1.0"
   },
   "scripts": {
     "build": "tsup src/index.ts --format esm --clean && tsc -p tsconfig.build.json",

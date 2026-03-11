@@ -15,11 +15,11 @@ This workspace centralizes shared behavior so chain-specific projects can focus 
 
 The repo is split into small packages with stable APIs:
 
-- `@idoa/types`: shared contracts and result types
-- `@idoa/utils`: generic runtime helpers (retry, timeout, guards)
-- `@idoa/core`: diagnostics pipeline, check registry, aggregation, config validation
-- `@idoa/reporter`: JSON and human-readable terminal reporting
-- `@idoa/cli-kit`: minimal CLI integration helpers
+- `@idoa/dev-doctor-types`: shared contracts and result types
+- `@idoa/dev-doctor-utils`: generic runtime helpers (retry, timeout, guards)
+- `@idoa/dev-doctor-core`: diagnostics pipeline, check registry, aggregation, config validation
+- `@idoa/dev-doctor-reporter`: JSON and human-readable terminal reporting
+- `@idoa/dev-doctor-cli-kit`: minimal CLI integration helpers
 
 Design principles:
 - chain-agnostic by default
@@ -46,26 +46,26 @@ Design principles:
 
 ## Package Summaries
 
-### `@idoa/types`
+### `@idoa/dev-doctor-types`
 - standardized check/result/report types
 - adapter and config contracts
 
-### `@idoa/utils`
+### `@idoa/dev-doctor-utils`
 - retry/backoff utilities
 - timeout wrappers
 - small type-safe helpers
 
-### `@idoa/core`
+### `@idoa/dev-doctor-core`
 - check registration and execution
 - pipeline orchestration
 - result aggregation
 - zod config validation
 
-### `@idoa/reporter`
+### `@idoa/dev-doctor-reporter`
 - structured JSON report generation
 - terminal-friendly report rendering
 
-### `@idoa/cli-kit`
+### `@idoa/dev-doctor-cli-kit`
 - simple CLI runner for wiring adapters to the core engine
 
 ## Local Development
@@ -109,15 +109,15 @@ npm run typecheck
 In a chain-specific repository:
 
 1. Install needed packages.
-2. Implement `ChainAdapter` and chain-specific checks using `@idoa/types`.
-3. Use `runDiagnosticPipeline` from `@idoa/core`.
-4. Render output with `@idoa/reporter`.
+2. Implement `ChainAdapter` and chain-specific checks using `@idoa/dev-doctor-types`.
+3. Use `runDiagnosticPipeline` from `@idoa/dev-doctor-core`.
+4. Render output with `@idoa/dev-doctor-reporter`.
 
 Example sketch:
 
 ```ts
-import { runDiagnosticPipeline } from '@idoa/core';
-import { createTerminalReport } from '@idoa/reporter';
+import { runDiagnosticPipeline } from '@idoa/dev-doctor-core';
+import { createTerminalReport } from '@idoa/dev-doctor-reporter';
 
 const report = await runDiagnosticPipeline({
   checks: myChainChecks,

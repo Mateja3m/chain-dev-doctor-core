@@ -1,4 +1,4 @@
-# @idoa/core
+# @idoa/dev-doctor-core
 
 Core orchestration package for chain-agnostic diagnostic execution.
 
@@ -12,5 +12,5 @@ Core orchestration package for chain-agnostic diagnostic execution.
 ## Usage
 
 ```ts
-import { runDiagnosticPipeline } from '@idoa/core';
+import { runDiagnosticPipeline } from '@idoa/dev-doctor-core';
 ```

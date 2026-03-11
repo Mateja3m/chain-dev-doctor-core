@@ -1,5 +1,5 @@
 {
-  "name": "@idoa/core",
+  "name": "@idoa/dev-doctor-core",
   "version": "0.1.0",
   "description": "Core diagnostics engine for chain-dev-doctor projects.",
   "license": "MIT",
@@ -35,8 +35,8 @@
   },
   "files": ["dist"],
   "dependencies": {
-    "@idoa/types": "0.1.0",
-    "@idoa/utils": "0.1.0",
+    "@idoa/dev-doctor-types": "0.1.0",
+    "@idoa/dev-doctor-utils": "0.1.0",
     "zod": "^3.24.2"
   },
   "scripts": {

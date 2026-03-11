@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import type { PipelineReport } from '@idoa/types';
+import type { PipelineReport } from '@idoa/dev-doctor-types';
 
 import { createJsonReport, createTerminalReport } from '../src/index.js';
 
