@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "lib": ["ES2022"],
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "useUnknownInCatchVariables": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "baseUrl": ".",
+    "paths": {
+      "@idoa/types": ["packages/types/src/index.ts"],
+      "@idoa/utils": ["packages/utils/src/index.ts"],
+      "@idoa/core": ["packages/core/src/index.ts"],
+      "@idoa/reporter": ["packages/reporter/src/index.ts"],
+      "@idoa/cli-kit": ["packages/cli-kit/src/index.ts"]
+    },
+    "types": ["node", "vitest/globals"]
+  }
+}

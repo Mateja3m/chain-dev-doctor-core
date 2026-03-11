@@ -1,0 +1,52 @@
+{
+  "name": "chain-dev-doctor-core",
+  "version": "0.1.0",
+  "private": true,
+  "description": "TypeScript-first shared engine for chain-agnostic developer diagnostics and reliability tooling.",
+  "license": "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mateja3m/chain-dev-doctor-core.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mateja3m/chain-dev-doctor-core/issues"
+  },
+  "homepage": "https://github.com/Mateja3m/chain-dev-doctor-core#readme",
+  "keywords": [
+    "web3",
+    "diagnostics",
+    "developer-tools",
+    "typescript",
+    "monorepo"
+  ],
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run --workspace @idoa/types build && npm run --workspace @idoa/utils build && npm run --workspace @idoa/core build && npm run --workspace @idoa/reporter build && npm run --workspace @idoa/cli-kit build",
+    "clean": "npm run --workspaces clean",
+    "lint": "npm run --workspaces lint",
+    "test": "npm run --workspaces test",
+    "typecheck": "npm run --workspaces typecheck",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "@types/node": "^22.13.10",
+    "@typescript-eslint/eslint-plugin": "^8.26.0",
+    "@typescript-eslint/parser": "^8.26.0",
+    "eslint": "^9.22.0",
+    "eslint-config-prettier": "^10.1.1",
+    "prettier": "^3.5.3",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.26.0",
+    "vitest": "^3.0.8",
+    "zod": "^3.24.2"
+  }
+}
