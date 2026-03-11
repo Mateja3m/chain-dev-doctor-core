@@ -1,0 +1,45 @@
+{
+  "name": "@idoa/types",
+  "version": "0.1.0",
+  "description": "Shared contracts and standardized types for chain-dev-doctor.",
+  "license": "SEE LICENSE IN ../../LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mateja3m/chain-dev-doctor-core.git",
+    "directory": "packages/types"
+  },
+  "bugs": {
+    "url": "https://github.com/Mateja3m/chain-dev-doctor-core/issues"
+  },
+  "homepage": "https://github.com/Mateja3m/chain-dev-doctor-core/tree/main/packages/types#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false,
+  "keywords": [
+    "idoa",
+    "types",
+    "web3",
+    "diagnostics"
+  ],
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --clean && tsc -p tsconfig.build.json",
+    "clean": "rm -rf dist",
+    "lint": "eslint src test --ext .ts",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  }
+}
