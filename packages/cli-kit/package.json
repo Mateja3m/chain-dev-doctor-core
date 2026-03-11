@@ -1,0 +1,48 @@
+{
+  "name": "@idoa/cli-kit",
+  "version": "0.1.0",
+  "description": "Minimal CLI integration helpers for chain-dev-doctor tooling.",
+  "license": "SEE LICENSE IN ../../LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mateja3m/chain-dev-doctor-core.git",
+    "directory": "packages/cli-kit"
+  },
+  "bugs": {
+    "url": "https://github.com/Mateja3m/chain-dev-doctor-core/issues"
+  },
+  "homepage": "https://github.com/Mateja3m/chain-dev-doctor-core/tree/main/packages/cli-kit#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false,
+  "keywords": [
+    "idoa",
+    "cli",
+    "diagnostics",
+    "web3"
+  ],
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "dependencies": {
+    "@idoa/core": "0.1.0",
+    "@idoa/reporter": "0.1.0",
+    "@idoa/types": "0.1.0"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --clean && tsc -p tsconfig.build.json",
+    "clean": "rm -rf dist",
+    "lint": "eslint src test --ext .ts",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  }
+}
